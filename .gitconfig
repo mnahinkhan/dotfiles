@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+	name = mnahinkhan
+	email = mnk1@andrew.cmu.edu
+[core]
+	autocrlf = input
+	editor = vim
+[alias]
+	lg = log --all --decorate --oneline --graph
+    st = status -sb
+    po = push origin
+    cm = commit -m
