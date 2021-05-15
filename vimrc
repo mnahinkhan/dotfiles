@@ -149,9 +149,6 @@ set autoindent          " copy indent from current line when starting a new line
 set backspace=indent,eol,start
 
 
-" Specific to networks...
-" autocmd BufWritePost /Users/nahin/Google\ Drive/Universities/CMU\ in\ Qatar/Work/S21/networks/* !send %
-
 " Let's save undo info!
 if !isdirectory($HOME."/.vim")
     call mkdir($HOME."/.vim", "", 0770)
