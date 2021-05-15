@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/nahin/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -89,21 +89,16 @@ source $ZSH/oh-my-zsh.sh
 # >>> start of previous zshrc
 export PATH="/usr/local/anaconda3/bin:$PATH"
 export PATH="/usr/local/smlnj/bin:$PATH"
-export PATH="/Users/nahin/Documents/srilm/bin/macosx:$PATH"
-export PATH="/Users/nahin/Documents/srilm/bin:$PATH"
-export PATH="/Users/nahin/bin:$PATH"
+export PATH="~/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
-export MANPATH="/Users/nahin/Documents/srilm/man:$MANPATH"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-cd "/Users/nahin/Google Drive/Universities/CMU in Qatar/Work/S21/"
-source ~/.bash_profile
 
 setopt HIST_IGNORE_SPACE
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source /Users/nahin/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 export EDITOR=vim
 bindkey -v
@@ -114,17 +109,17 @@ bindkey '^j' autosuggest-accept
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/nahin/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/nahin/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/nahin/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/nahin/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/Users/nahin/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Users/nahin/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/nahin/opt/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/nahin/opt/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
 
 export TERM=screen-256color
@@ -135,12 +130,6 @@ export TERM=screen-256color
 
 
 if [ "$TMUX" = "" ]; then conda deactivate; tmux a; fi
-
-# just for a specific 441 project
-LD_LIBRARY_PATH=/usr/local/opt/openssl/lib:"${LD_LIBRARY_PATH}"
-CPATH=/usr/local/opt/openssl/include:"${CPATH}"
-PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig:"${PKG_CONFIG_PATH}"
-export LD_LIBRARY_PATH CPATH PKG_CONFIG_PATH
 
 
 # User configuration
