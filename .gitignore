@@ -1,1 +1,6 @@
 .DS_Store
+*.swp
+.netrwhist
+vim/colors/
+vim/spell/
+vim/undo-dir
