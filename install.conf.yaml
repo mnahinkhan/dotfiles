@@ -19,6 +19,8 @@
     ~/.oh-my-zsh/custom/themes/powerlevel10k: ~/.dotfiles/powerlevel10k
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
         ~/.dotfiles/zsh-autosuggestions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting:
+        ~/.dotfiles/zsh-syntax-highlighting
 
 - shell:
   - git submodule sync --recursive
