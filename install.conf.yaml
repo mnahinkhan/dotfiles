@@ -14,8 +14,11 @@
     ~/.vim:
     ~/.vimrc:
     ~/.zshrc:
-    ~/.vim/colors/solarized.vim: ~/.vim/vim-colors-solarized/colors/solarized.vim
+    ~/.vim/colors/solarized.vim:
+        ~/.vim/vim-colors-solarized/colors/solarized.vim
     ~/.oh-my-zsh/custom/themes/powerlevel10k: ~/.dotfiles/powerlevel10k
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
+        ~/.dotfiles/zsh-autosuggestions
 
 - shell:
   - git submodule sync --recursive
