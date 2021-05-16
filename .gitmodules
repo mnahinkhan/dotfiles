@@ -85,3 +85,8 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+    ignore = untracked
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+    ignore = untracked
