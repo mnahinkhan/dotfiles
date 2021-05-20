@@ -50,8 +50,8 @@ bindkey '^j' autosuggest-accept
 
 
 # One of these two works!
-# export TERM=xterm-256color
-export TERM=screen-256color
+export TERM=xterm-256color
+# export TERM=screen-256color
 
 # if fzf is installed load it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
