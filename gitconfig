@@ -6,7 +6,8 @@
 	autocrlf = input
 	editor = vim
 [alias]
-	lg = log --all --decorate --oneline --graph
+	lg = log --all --decorate --graph
+	lgo = log --all --decorate --oneline --graph
     st = status -sb
     po = push origin
     cm = commit -m
