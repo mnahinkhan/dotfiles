@@ -61,6 +61,17 @@ alias dc="cd"
 alias top10="history 1 | awk '{\$1=\"\"; print substr(\$0,2)}' | sort | uniq -c | sort -n | tail -n 10"
 alias tldrfails="cat ~/.zsh_history | grep 'tldr' | cut -c 16- | grep '^tldr' | xargs -I _ sh -c 'echo _;_' | rg -B1 'exist yet'"
 
+# Functions
+colors() {
+    for R in $(seq 0 20 255); do
+        for G in $(seq 0 20 255); do
+            for B in $(seq 0 20 255); do
+                printf "\e[38;2;${R};${G};${B}m█\e[0m";
+            done
+        done
+    done
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
