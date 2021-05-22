@@ -9,6 +9,7 @@
  - miniconda (with default envs?)
  - node
  - rg
+ - tldr
  - tmux
  - zsh
 
