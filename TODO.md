@@ -1,5 +1,6 @@
 ### Installations to automate
  - autojump
+ - docker (optional)
  - exuberant-tags
  - fd
  - fzf
