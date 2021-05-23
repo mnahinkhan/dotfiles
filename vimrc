@@ -119,8 +119,8 @@ autocmd FileType text match ErrorMsg '\%>79v.\+'
 autocmd FileType tex call vimtex#init()
 
 " change comment strings
-autocmd FileType python setlocal commentstring=#\ %sl
-autocmd FileType sh setlocal commentstring=#\ %sl
+autocmd FileType python setlocal commentstring=#\ %s
+autocmd FileType sh setlocal commentstring=#\ %s
 
 "vimtex plugin options
 let g:vimtex_view_method='skim'
