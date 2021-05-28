@@ -2,6 +2,7 @@
 [user]
 	name = mnahinkhan
 	email = mnk1@andrew.cmu.edu
+	signingkey = 57B8B5FEFD337B29
 [core]
 	autocrlf = input
 	editor = vim
@@ -12,3 +13,7 @@
     st = status -sb
     po = push origin
     cm = commit -m
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
