@@ -98,3 +98,7 @@
 	path = zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
     ignore = untracked
+[submodule "vim/pack/vendor/start/undotree"]
+	path = vim/pack/vendor/start/undotree
+	url = https://github.com/mbbill/undotree.git
+    ignore = untracked
