@@ -193,6 +193,9 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 "for tagbar...
 nmap <F8> :TagbarToggle<CR>
 
+" for undotree
+nnoremap <F5> :UndotreeToggle<CR>
+
 "for nerdtree
 nnoremap <C-t> :NERDTreeToggle<CR>
 
