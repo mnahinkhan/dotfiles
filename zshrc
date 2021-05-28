@@ -56,6 +56,9 @@ export TERM=xterm-256color
 # if fzf is installed load it
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# If GPG stops working try this
+# export GPG_TTY=$(tty)
+
 # Aliases. Consider refactoring
 alias e="exa -alh"
 alias dc="cd"
