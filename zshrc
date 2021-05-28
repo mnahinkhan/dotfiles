@@ -57,6 +57,7 @@ export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Aliases. Consider refactoring
+alias e="exa -alh"
 alias dc="cd"
 alias top10="history 1 | awk '{\$1=\"\"; print substr(\$0,2)}' | sort | uniq -c | sort -n | tail -n 10"
 alias tldrfails="cat ~/.zsh_history | grep 'tldr' | cut -c 16- | grep '^tldr' | xargs -I _ sh -c 'echo _;_' | rg -B1 'exist yet'"
