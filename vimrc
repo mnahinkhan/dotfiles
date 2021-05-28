@@ -253,3 +253,5 @@ function! TagbarStatusFunc(current, sort, fname, ...) abort
     let g:lightline.fname = a:fname
   return lightline#statusline(0)
 endfunction
+
+let g:coc_disable_startup_warning = 1
