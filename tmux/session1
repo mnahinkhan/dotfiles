@@ -1,9 +1,0 @@
-#session1
-new  -s cmu -n nlp 
-neww -n cmu
-neww -n misc
-neww -n vim
-neww -n playground
-neww -n linode
-neww -n rnpfind
-selectw -t 0

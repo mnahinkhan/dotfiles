@@ -110,17 +110,29 @@ nmap T <Plug>(easymotion-Tl)
 xmap T <Plug>(easymotion-Tl)
 
 
+" Highlighting of characters beyond 79th character
 autocmd FileType python match ErrorMsg '\%>79v.\+'
 autocmd FileType c match ErrorMsg '\%>79v.\+'
 autocmd FileType tex match ErrorMsg '\%>79v.\+'
 autocmd FileType cpp match ErrorMsg '\%>79v.\+'
 autocmd FileType markdown match ErrorMsg '\%>79v.\+'
 autocmd FileType text match ErrorMsg '\%>79v.\+'
+
+" Too-long-highlight enable and disable
+nnoremap <silent> tlhe :hi ErrorMsg term=reverse cterm=reverse ctermfg=124 guifg=White guibg=Red<CR>
+nnoremap <silent> tlhd :hi ErrorMsg None<CR>
+
+" Start-up vimtex
 autocmd FileType tex call vimtex#init()
 
 " change comment strings
-autocmd FileType python setlocal commentstring=#\ %sl
-autocmd FileType sh setlocal commentstring=#\ %sl
+autocmd FileType python setlocal commentstring=#\ %s
+autocmd FileType sh setlocal commentstring=#\ %s
+
+nnoremap cs# :setlocal commentstring=#\ %s<CR>:echo "Comment string set to \"#\""<CR>
+nnoremap cs" :setlocal commentstring=\"\ %s<CR>:echo "Comment string set to '\"'"<CR>
+nnoremap cs/ :setlocal commentstring=/*\ %s\ */<CR>:echo "Comment string set to \"/*...*/\""<CR>
+
 
 "vimtex plugin options
 let g:vimtex_view_method='skim'
