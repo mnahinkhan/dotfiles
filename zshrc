@@ -1,3 +1,8 @@
+# Allow local customizations in the ~/.zshrc_local_before file
+if [ -f ~/.zshrc_local_before ]; then
+    source ~/.zshrc_local_before
+fi
+
 # If tmux exists, the shell is interactive, and we aren't already in
 # tmux, start tmux or attach to the "driver" session
 # From: https://unix.stackexchange.com/a/113768
