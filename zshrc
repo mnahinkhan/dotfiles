@@ -64,7 +64,7 @@ export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # If GPG stops working try this
-# export GPG_TTY=$(tty)
+export GPG_TTY=$TTY
 
 # Aliases. Consider refactoring
 alias e="exa -alh"
