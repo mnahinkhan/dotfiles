@@ -44,7 +44,7 @@ plugins=(git colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# export PATH="~/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # Investigate these two
 export CLICOLOR=1
