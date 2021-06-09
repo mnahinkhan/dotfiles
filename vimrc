@@ -109,6 +109,14 @@ xmap t <Plug>(easymotion-tl)
 nmap T <Plug>(easymotion-Tl)
 xmap T <Plug>(easymotion-Tl)
 
+" Highlight trailing white space (https://stackoverflow.com/a/4617156/8551394)
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 
 " Highlighting of characters beyond 79th character
 autocmd FileType python match ErrorMsg '\%>79v.\+'
