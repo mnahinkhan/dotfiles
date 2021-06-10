@@ -9,7 +9,7 @@ neww -n playground
 send-keys 'j playground' C-m
 send-keys 'ls' C-m
 neww -n linode
-send-keys 'ssh lyell'
+send-keys 'mosh lyell'
 neww -n rnpfind
 send-keys 'j rnpfind webapp' C-m
 send-keys 'ls' C-m
