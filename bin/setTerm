@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ "$1" = "light" ]; then
+    PROFILE="Solarized Light"
+else
+    PROFILE="Solarized Dark ansi"
+fi
+
+
+echo "tell app \"Terminal\" to set current settings of tabs of windows to settings set \"${PROFILE}\""|osascript;

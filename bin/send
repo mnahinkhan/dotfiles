@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+if [[ $# -ne 1 ]]; then
+    if [[ $# -eq 0 ]]; then
+        echo "Usage: ""$(basename "$0")"" <file/dir>"
+        exit 1
+    fi
+
+    for arg in "$@"
+    do
+        send "$arg"
+    done
+
+    exit 0
+fi
+
+if [[ $1 == /* ]]; then path="$1"; else path="$(pwd)"/"$1"; fi
+
+if [[ -d $path ]] ; then
+    cd "$path" || exit 1
+    normpath=$(pwd)
+    cd - > /dev/null || exit 1
+    ispath=yes
+elif [[ -f $path ]] ; then
+    base=$(basename "$path")
+    dir=$(dirname "$path")
+    cd "$dir" || exit 1
+    norm=$(pwd)
+    cd - > /dev/null || exit 1
+    normpath=$norm/$base
+    ispath=no
+fi
+
+if echo "$normpath" | grep 'CMU in Qatar/Work/' > /dev/null ; then
+    sub=$(echo "$normpath" | sed -E 's/^.*CMU in Qatar\/Work\/(.*)$/\1/')
+    full=cmuq-unix:/afs/qatar.cmu.edu/usr23/mnk1/private/$sub
+    if [[ $ispath == n* ]]; then
+        rclone_cmd="rclone copy '$1' '$(dirname "$full")'"
+    else
+        rclone_cmd="rclone copy '$1' '$full'"
+    fi
+    echo "$rclone_cmd"
+    eval "$rclone_cmd"
+
+
+else
+    echo "This folder should not be synced, exiting"
+    exit 1
+fi
+
