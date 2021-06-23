@@ -179,6 +179,20 @@ endif
 set undodir=~/.vim/undo-dir
 set undofile
 
+" Change cursor during insert mode
+" (https://stackoverflow.com/questions/6488683/how-do-i-change-the-cursor-between-normal-and-insert-modes-in-vim)
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
+" hi CursorLine cterm=NONE ctermbg=black
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+" reset the cursor on start (for older versions of vim, usually not required)
+augroup myCmds
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END
+
 
 
 " coc nvim stuff....
