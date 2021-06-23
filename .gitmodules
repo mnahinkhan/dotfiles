@@ -126,3 +126,9 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/pack/vendor/start/goyo.vim"]
+	path = vim/pack/vendor/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim.git
+[submodule "vim/pack/vendor/start/limelight.vim"]
+	path = vim/pack/vendor/start/limelight.vim
+	url = https://github.com/junegunn/limelight.vim.git
