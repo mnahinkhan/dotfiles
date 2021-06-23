@@ -53,6 +53,12 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # locale settings (helps with Mosh https://github.com/mobile-shell/mosh/issues/793#issuecomment-605407244)
 export LC_CTYPE="en_US.UTF-8"
 
+# Settings to help vim show emojis...
+export LANGUAGE="en"
+export LANG="C"
+export LC_MESSAGES="C"
+
+
 # Don't store commands starting with a space
 setopt HIST_IGNORE_SPACE
 
