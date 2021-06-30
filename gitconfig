@@ -13,6 +13,7 @@
     st = status -sb
     po = push origin
     cm = commit -m
+    co = checkout
 [gpg]
 	program = gpg
 [commit]
