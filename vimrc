@@ -17,7 +17,7 @@ set nocompatible
 syntax on
 
 " solarized color?
-if strftime("%H") < 18 && strftime("%H") > 8
+if strftime("%H") < 18 && strftime("%H") > 6
   set background=light
 else
   set background=dark
