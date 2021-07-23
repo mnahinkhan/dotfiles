@@ -105,30 +105,48 @@
 [submodule "tmux/plugins/tmux-battery"]
 	path = tmux/plugins/tmux-battery
 	url = https://git::@github.com/tmux-plugins/tmux-battery
+    ignore = untracked
 [submodule "tmux/plugins/tmux-copycat"]
 	path = tmux/plugins/tmux-copycat
 	url = https://git::@github.com/tmux-plugins/tmux-copycat
+    ignore = untracked
 [submodule "tmux/plugins/tmux-online-status"]
 	path = tmux/plugins/tmux-online-status
 	url = https://git::@github.com/tmux-plugins/tmux-online-status
+    ignore = untracked
 [submodule "tmux/plugins/tmux-open"]
 	path = tmux/plugins/tmux-open
 	url = https://git::@github.com/tmux-plugins/tmux-open
+    ignore = untracked
 [submodule "tmux/plugins/tmux-plugin-sysstat"]
 	path = tmux/plugins/tmux-plugin-sysstat
 	url = https://git::@github.com/samoshkin/tmux-plugin-sysstat
+    ignore = untracked
 [submodule "tmux/plugins/tmux-prefix-highlight"]
 	path = tmux/plugins/tmux-prefix-highlight
 	url = https://git::@github.com/tmux-plugins/tmux-prefix-highlight
+    ignore = untracked
 [submodule "tmux/plugins/tmux-sidebar"]
 	path = tmux/plugins/tmux-sidebar
 	url = https://git::@github.com/tmux-plugins/tmux-sidebar
+    ignore = untracked
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+    ignore = untracked
 [submodule "vim/pack/vendor/start/goyo.vim"]
 	path = vim/pack/vendor/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+    ignore = untracked
 [submodule "vim/pack/vendor/start/limelight.vim"]
 	path = vim/pack/vendor/start/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
+    ignore = untracked
+[submodule "vim/pack/vendor/start/quick-scope"]
+	path = vim/pack/vendor/start/quick-scope
+	url = https://github.com/unblevable/quick-scope.git
+    ignore = untracked
+[submodule "vim/pack/vendor/start/vim-devicons"]
+	path = vim/pack/vendor/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+    ignore = untracked
