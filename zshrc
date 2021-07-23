@@ -80,13 +80,36 @@ export TERM=xterm-256color
 # If GPG stops working try this
 export GPG_TTY=$TTY
 
+# Bat theme
+export BAT_THEME="Solarized (light)"
+
+
 # Aliases. Consider refactoring
 alias e="exa -alh"
 alias docker="sudo docker"
 alias docker-compose="sudo docker-compose"
 alias dc="cd"
+alias rgg="batgrep"
 alias top10="history 1 | awk '{\$1=\"\"; print substr(\$0,2)}' | sort | uniq -c | sort -n | tail -n 10"
 alias tldrfails="cat ~/.zsh_history | grep 'tldr' | cut -c 16- | grep '^tldr' | xargs -I _ sh -c 'echo _;_' | rg -B1 'exist yet'"
+
+# FZF stuff
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
+    export|unset) fzf "$@" --preview "eval 'echo \$'{}" ;;
+    *)            fzf "$@" --preview 'bat --style=numbers --color=always --line-range :500 {}' ;;
+    # *)            fzf "$@" ;;
+  esac
+}
+
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 
 # Functions
 colors() {
