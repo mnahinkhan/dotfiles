@@ -67,7 +67,7 @@ export EDITOR=vim
 bindkey -v
 
 # Ctrl+j to accept autocomplete suggestion
-bindkey '^j' autosuggest-accept    
+bindkey '^j' autosuggest-accept
 
 
 # One of these two works!
