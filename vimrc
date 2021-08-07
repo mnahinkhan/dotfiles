@@ -137,9 +137,9 @@ autocmd FileType tex call vimtex#init()
 autocmd FileType python setlocal commentstring=#\ %s
 autocmd FileType sh setlocal commentstring=#\ %s
 
-nnoremap cs# :setlocal commentstring=#\ %s<CR>:echo "Comment string set to \"#\""<CR>
-nnoremap cs" :setlocal commentstring=\"\ %s<CR>:echo "Comment string set to '\"'"<CR>
-nnoremap cs/ :setlocal commentstring=/*\ %s\ */<CR>:echo "Comment string set to \"/*...*/\""<CR>
+nnoremap ccs# :setlocal commentstring=#\ %s<CR>:echo "Comment string set to \"#\""<CR>
+nnoremap ccs" :setlocal commentstring=\"\ %s<CR>:echo "Comment string set to '\"'"<CR>
+nnoremap ccs/ :setlocal commentstring=/*\ %s\ */<CR>:echo "Comment string set to \"/*...*/\""<CR>
 
 
 "vimtex plugin options
