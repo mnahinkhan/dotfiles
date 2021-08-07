@@ -97,17 +97,17 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
-nmap f <Plug>(easymotion-fl)
-xmap f <Plug>(easymotion-fl)
+" nmap f <Plug>(easymotion-fl)
+" xmap f <Plug>(easymotion-fl)
 
-nmap F <Plug>(easymotion-Fl)
-xmap F <Plug>(easymotion-Fl)
+" nmap F <Plug>(easymotion-Fl)
+" xmap F <Plug>(easymotion-Fl)
 
-nmap t <Plug>(easymotion-tl)
-xmap t <Plug>(easymotion-tl)
+" nmap t <Plug>(easymotion-tl)
+" xmap t <Plug>(easymotion-tl)
 
-nmap T <Plug>(easymotion-Tl)
-xmap T <Plug>(easymotion-Tl)
+" nmap T <Plug>(easymotion-Tl)
+" xmap T <Plug>(easymotion-Tl)
 
 " Highlight trailing white space (https://stackoverflow.com/a/4617156/8551394)
 highlight ExtraWhitespace ctermbg=red guibg=red
