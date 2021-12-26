@@ -258,8 +258,13 @@ highlight! link SignColumn LineNr
 "maybe comment this out 
 let g:tex_flavor = 'latex'
 
-"add spell checking for tex  files
+"add spell checking for tex, txt, md files
 autocmd BufRead,BufNewFile *.tex setlocal spell
+autocmd BufRead,BufNewFile *.txt setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.py setlocal spell
+
+hi SpellBad cterm=underline
 
 " python syntax highlighting
 let g:python_highlight_all = 1
