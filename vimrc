@@ -273,6 +273,8 @@ let g:python_highlight_all = 1
 set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
 nmap <C-P> :FZF<CR>
+nnoremap <silent> <C-b> :Buffers<CR>
+nnoremap <silent> <C-f> :Rg<CR><C-P>
 
 " make clipboard system wide
 set clipboard^=unnamed
