@@ -91,6 +91,9 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \}
 
+" Set the leader
+nnoremap <SPACE> <Nop>
+let mapleader=" "
 
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
