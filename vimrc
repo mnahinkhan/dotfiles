@@ -82,6 +82,15 @@ set ttymouse=xterm2
 set fillchars+=vert:│
 hi VertSplit ctermbg=NONE guibg=NONE
 
+"Configure ALE Fixers
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['isort', 'black'],
+\   'javascript': ['prettier', 'eslint'],
+\}
+
 
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
