@@ -150,3 +150,18 @@
 	path = vim/pack/vendor/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
     ignore = untracked
+[submodule "vim/pack/vendor/start/auto-pairs"]
+	path = vim/pack/vendor/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/pack/vendor/start/traces.vim"]
+	path = vim/pack/vendor/start/traces.vim
+	url = https://github.com/markonm/traces.vim.git
+[submodule "vim/pack/vendor/start/vim-polyglot"]
+	path = vim/pack/vendor/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "vim/pack/vendor/start/vim-snippets"]
+	path = vim/pack/vendor/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/pack/vendor/start/vim-tmux-navigator"]
+	path = vim/pack/vendor/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
