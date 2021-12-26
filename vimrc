@@ -164,6 +164,11 @@ nnoremap ccs" :setlocal commentstring=\"\ %s<CR>:echo "Comment string set to '\"
 nnoremap ccs/ :setlocal commentstring=/*\ %s\ */<CR>:echo "Comment string set to \"/*...*/\""<CR>
 
 
+" Fold using indents
+set foldmethod=indent
+set foldlevelstart=99
+
+
 "vimtex plugin options
 let g:vimtex_view_method='skim'
 
