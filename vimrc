@@ -91,6 +91,10 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \}
 
+" Set the window minimum width
+set winwidth=79
+
+
 " Set the leader
 nnoremap <SPACE> <Nop>
 let mapleader=" "
