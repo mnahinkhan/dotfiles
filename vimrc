@@ -112,7 +112,7 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-" EasyMotion bindings 
+" EasyMotion bindings
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
@@ -255,7 +255,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 "change color of git-guttter
 highlight! link SignColumn LineNr
 
-"maybe comment this out 
+"maybe comment this out
 let g:tex_flavor = 'latex'
 
 "add spell checking for tex, txt, md files
