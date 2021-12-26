@@ -279,6 +279,9 @@ nnoremap <silent> <C-f> :Rg<CR><C-P>
 " make clipboard system wide
 set clipboard^=unnamed
 
+" Try snippets
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
 
 "test feature:
 let g:lightline = {
