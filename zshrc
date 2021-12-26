@@ -92,6 +92,8 @@ alias dc="cd"
 alias rgg="batgrep"
 alias top10="history 1 | awk '{\$1=\"\"; print substr(\$0,2)}' | sort | uniq -c | sort -n | tail -n 10"
 alias tldrfails="cat ~/.zsh_history | grep 'tldr' | cut -c 16- | grep '^tldr' | xargs -I _ sh -c 'echo _;_' | rg -B1 'exist yet'"
+alias k=kubectl
+complete -F __start_kubectl k
 
 # FZF stuff
 _fzf_comprun() {
