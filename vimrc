@@ -77,6 +77,12 @@ set mouse+=a"
 " Allow using the mouse to resize windows
 set ttymouse=xterm2
 
+" Keep window split thin
+" https://vi.stackexchange.com/questions/2938/can-the-split-separator-in-vim-be-less-than-a-full-column-wide
+set fillchars+=vert:│
+hi VertSplit ctermbg=NONE guibg=NONE
+
+
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
