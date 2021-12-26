@@ -85,7 +85,7 @@ export BAT_THEME="Solarized (light)"
 
 
 # Aliases. Consider refactoring
-alias e="exa -alh"
+# alias e="exa -alh"
 alias docker="sudo docker"
 alias docker-compose="sudo docker-compose"
 alias dc="cd"
@@ -107,11 +107,34 @@ _fzf_comprun() {
 }
 
 export FZF_DEFAULT_COMMAND="fd --type file --color=always"
-export FZF_DEFAULT_OPTS="--ansi"
+export FZF_DEFAULT_OPTS="--ansi --history=$HOME/.fzf_history"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 
 # Functions
+e() {
+    for arg in "$@"
+    do
+        e-helper "$arg"
+    done
+    if [ $# -eq 0 ]; then
+        e .
+    fi
+}
+
+e-helper() {
+    if [ $# -ne 1 ]; then
+        echo "Error!"
+        exit(1);
+    fi
+
+    if [ -f "$1" ]; then
+        bat "$1"
+    else
+        exa -alh --git --icons "$1"
+    fi
+}
+
 colors() {
     for R in $(seq 0 20 255); do
         for G in $(seq 0 20 255); do
