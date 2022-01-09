@@ -99,6 +99,10 @@ set winwidth=79
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
+" Map Leader s to git blame status line
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+"
+
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys

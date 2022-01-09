@@ -165,3 +165,9 @@
 [submodule "vim/pack/vendor/start/vim-tmux-navigator"]
 	path = vim/pack/vendor/start/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "vim/pack/vendor/start/git-blame.vim"]
+	path = vim/pack/vendor/start/git-blame.vim
+	url = https://github.com/zivyangll/git-blame.vim.git
+[submodule "vim/pack/vendor/start/git-messenger.vim"]
+	path = vim/pack/vendor/start/git-messenger.vim
+	url = https://github.com/rhysd/git-messenger.vim.git
