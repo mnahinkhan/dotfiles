@@ -138,6 +138,18 @@ e-helper() {
     fi
 }
 
+add-vim-plugins() {
+    if ! cd ~/.vim/pack/vendor/start; then
+      return
+    fi
+    for repo in ./*
+    do
+        echo $repo
+        git submodule add $(cd $repo && git remote get-url origin)
+    done
+    cd -
+}
+
 colors() {
     for R in $(seq 0 20 255); do
         for G in $(seq 0 20 255); do
