@@ -12,6 +12,7 @@
     ~/.gitignore_global:
     ~/.inputrc:
     ~/.oh-my-zsh:
+    ~/.radian_profile:
     ~/.tmux.conf:
     ~/.tmux:
     ~/.vim:
