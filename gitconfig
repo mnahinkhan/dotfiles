@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 	name = mnahinkhan
-	email = mnk1@andrew.cmu.edu
-	signingkey = 57B8B5FEFD337B29
+	email = mnk1@alumni.cmu.edu
+	signingKey = EFF9589E
 [core]
 	autocrlf = input
 	editor = vim
