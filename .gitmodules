@@ -171,3 +171,6 @@
 [submodule "vim/pack/vendor/start/git-messenger.vim"]
 	path = vim/pack/vendor/start/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
+[submodule "vim/pack/vendor/start/vim-highlightedyank"]
+	path = vim/pack/vendor/start/vim-highlightedyank
+	url = https://github.com/machakann/vim-highlightedyank.git
