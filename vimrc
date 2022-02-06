@@ -89,6 +89,7 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'python': ['isort', 'black'],
 \   'javascript': ['prettier', 'eslint'],
+\   'r': ['styler'],
 \}
 
 " Set the window minimum width
