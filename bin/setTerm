@@ -16,10 +16,12 @@ function light {
 if [ "$1" = "light" ]; then
     PROFILE="Solarized Light"
     chp 3
+    cat ~/.hyper.js | sed -E 's/hyper-solarized-[a-z]*/hyper-solarized-light/g' > tmp.txt && mv tmp.txt ~/.hyper.js
     light
 else
     PROFILE="Solarized Dark ansi"
     chp 2
+    cat ~/.hyper.js | sed -E 's/hyper-solarized-[a-z]*/hyper-solarized-dark/g' > tmp.txt && mv tmp.txt ~/.hyper.js
     dark
 fi
 
