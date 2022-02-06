@@ -1,19 +1,19 @@
 #driver
 new  -s driver -n misc
 send-keys 'cd ~' C-m
-send-keys 'ls' C-m
+send-keys 'e' C-m
 neww -n dotfiles
 send-keys 'cd ~/.dotfiles' C-m
-send-keys 'ls' C-m
+send-keys 'e' C-m
 neww -n playground
 send-keys 'j playground' C-m
-send-keys 'ls' C-m
-neww -n linode
-send-keys 'mosh lyell'
-neww -n rnpfind
-send-keys 'j rnpfind webapp' C-m
-send-keys 'ls' C-m
-neww -n missing
-send-keys 'j missing' C-m
-send-keys 'ls' C-m
+send-keys 'e' C-m
+neww -n remote
+send-keys 'ssh machine_name_here'
+neww -n learning
+send-keys 'j learning' C-m
+send-keys 'e' C-m
+neww -n work
+send-keys 'j work' C-m
+send-keys 'e' C-m
 selectw -t 0
