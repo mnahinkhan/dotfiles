@@ -1,9 +1,26 @@
 #!/usr/bin/env bash
 
+function chp(){
+      xdotool key --clearmodifiers Shift+F10 r $1
+}
+
+function dark {
+    gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+}
+
+function light {
+    gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+}
+
+
 if [ "$1" = "light" ]; then
     PROFILE="Solarized Light"
+    chp 3
+    light
 else
     PROFILE="Solarized Dark ansi"
+    chp 2
+    dark
 fi
 
 
