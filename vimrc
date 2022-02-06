@@ -233,7 +233,8 @@ au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
 
-
+" Highlight yank duration in milliseconds
+let g:highlightedyank_highlight_duration = 100
 
 " coc nvim stuff....
 " use <tab> for trigger completion and navigate to the next complete item
