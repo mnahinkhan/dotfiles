@@ -14,6 +14,8 @@
     po = push origin
     cm = commit -m
     co = checkout
+    f = fetch
+    pu = pull
 [gpg]
 	program = gpg
 [commit]
