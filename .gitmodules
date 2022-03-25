@@ -174,3 +174,6 @@
 [submodule "vim/pack/vendor/start/vim-highlightedyank"]
 	path = vim/pack/vendor/start/vim-highlightedyank
 	url = https://github.com/machakann/vim-highlightedyank.git
+[submodule "vim/pack/vendor/start/nerdtree-git-plugin"]
+	path = vim/pack/vendor/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
