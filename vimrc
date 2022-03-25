@@ -90,6 +90,8 @@ let g:ale_fixers = {
 \   'python': ['isort', 'black'],
 \   'javascript': ['prettier', 'eslint'],
 \   'r': ['styler'],
+\   'css': ['prettier'],
+\   'html': ['prettier'],
 \}
 
 " Set the window minimum width
