@@ -290,6 +290,7 @@ let g:python_highlight_all = 1
 
 " FZF integration
 set rtp+=/usr/local/opt/fzf
+set rtp+=~/.linuxbrew/opt/fzf
 set rtp+=~/.fzf
 nmap <C-P> :FZF<CR>
 nnoremap <silent> <C-b> :Buffers<CR>
