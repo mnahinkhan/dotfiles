@@ -295,6 +295,15 @@ set clipboard^=unnamed
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
 
+" Manage coc extensions
+let g:coc_global_extensions = [
+  'coc-css',
+  'coc-html',
+  'coc-jedi',
+  'coc-r-lsp',
+  'coc-snippets'
+]
+
 "test feature:
 let g:lightline = {
       \ 'active': {
