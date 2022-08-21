@@ -297,12 +297,12 @@ imap <C-l> <Plug>(coc-snippets-expand)
 
 " Manage coc extensions
 let g:coc_global_extensions = [
-  'coc-css',
-  'coc-html',
-  'coc-jedi',
-  'coc-r-lsp',
-  'coc-snippets'
-]
+      \ 'coc-css',
+      \ 'coc-html',
+      \ 'coc-jedi',
+      \ 'coc-r-lsp',
+      \ 'coc-snippets',
+\ ]
 
 "test feature:
 let g:lightline = {
