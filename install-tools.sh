@@ -25,7 +25,9 @@ if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; th
     # conda (help set python versions)
     if ! command -v conda > /dev/null 2>&1; then
         wget --output-document miniconda-installer.sh https://repo.anaconda.com/miniconda/Miniconda3-py39_23.1.0-1-Linux-x86_64.sh
-        bash miniconda-installer.sh
+        bash ./miniconda-installer.sh -b -p $HOME/miniconda
+        eval "$($HOME/miniconda/bin/conda shell.zsh hook)"
+        conda init zsh
         rm miniconda-installer.sh
     fi
 
