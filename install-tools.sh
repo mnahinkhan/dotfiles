@@ -1,6 +1,7 @@
-# If OS is ubuntu install exa and autojump
+# Install various tools I need, based on OS detected
 
 
+# Ubuntu
 if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; then
 
     # Source: https://lindevs.com/install-exa-on-ubuntu
