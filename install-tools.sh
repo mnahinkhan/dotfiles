@@ -1,7 +1,7 @@
 # If OS is ubuntu install exa and autojump
 
 
-if [ -f /etc/os-release ] && [ "$(grep -c /etc/os-release "Ubuntu")" -ne 0 ]; then
+if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; then
 
     # Source: https://lindevs.com/install-exa-on-ubuntu
     sudo apt update
