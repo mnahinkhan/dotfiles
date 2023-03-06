@@ -36,4 +36,4 @@
     ~/bin: ~/.dotfiles/bin
 
 - shell:
-  - ./install-exa.sh
+  - ./install-tools.sh
