@@ -22,6 +22,11 @@ if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; th
         sudo apt-get install -y autojump
     fi
 
+    # zsh
+    if ! command -v zsh > /dev/null 2>&1; then
+        sudo apt-get install -y zsh
+    fi
+
     # conda (help set python versions)
     if ! command -v conda > /dev/null 2>&1; then
         wget --output-document miniconda-installer.sh https://repo.anaconda.com/miniconda/Miniconda3-py39_23.1.0-1-Linux-x86_64.sh
