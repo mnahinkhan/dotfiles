@@ -29,6 +29,12 @@ if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; th
         sudo apt-get install -y autojump
     fi
 
+    # make
+    if ! command -v make > /dev/null 2>&1; then
+        sudo apt-get install -y build-essential
+    fi
+
+
     # zsh
     if ! command -v zsh > /dev/null 2>&1; then
         sudo apt-get install -y zsh
