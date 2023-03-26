@@ -15,6 +15,13 @@ if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; th
         rm -rf exa.zip
     fi
 
+    # bat (nice cat)
+    if ! command -v bat > /dev/null 2>&1; then
+        sudo apt install -y bat
+        mkdir -p ~/.local/bin
+        ln -s /usr/bin/batcat ~/.local/bin/bat
+    fi
+
     # autojump (nice cd)
     if ! command -v autojump > /dev/null 2>&1; then
         # Source: https://github.com/wting/autojump
