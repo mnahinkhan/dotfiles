@@ -59,4 +59,14 @@ if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; th
         && sudo apt install gh -y
     fi
 
+    # node (useful for vim stuff)
+    if ! command -v node > /dev/null 2>&1; then
+        # From: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+        curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+        sudo bash /tmp/nodesource_setup.sh  # be careful
+        sudo apt install -y nodejs
+        rm /tmp/nodesource_setup.sh
+    fi
+
+
 fi
