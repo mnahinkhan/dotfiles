@@ -145,7 +145,11 @@ h() {
   else
     CHAR=' '
   fi
-  head -n1 "$1" | tr "$CHAR" '\n' | nl
+  if [ $# -eq 1 ]; then
+    head -n1 "$1" | tr "$CHAR" '\n' | nl
+  else
+    awk -F $CHAR "{print $(echo ${@:2} | sed -E 's/( |^)/,\$/g' | cut -c2-)}" $1
+  fi
 }
 
 add-vim-plugins() {
