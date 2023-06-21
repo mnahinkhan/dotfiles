@@ -139,6 +139,15 @@ e-helper() {
     fi
 }
 
+h() {
+  if head -n1 "$1" | grep -q $'\t'; then
+    CHAR='\t'
+  else
+    CHAR=' '
+  fi
+  head -n1 "$1" | tr "$CHAR" '\n' | nl
+}
+
 add-vim-plugins() {
     if ! cd ~/.vim/pack/vendor/start; then
       return
