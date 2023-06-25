@@ -148,7 +148,7 @@ h() {
   if [ $# -eq 1 ]; then
     head -n1 "$1" | tr "$CHAR" '\n' | nl
   else
-    awk -F $CHAR "{print $(echo ${@:2} | sed -E 's/( |^)/,\$/g' | cut -c2-)}" $1
+    awk -F $CHAR -vOFS=$CHAR "{print $(echo ${@:2} | sed -E 's/( |^)/,\$/g' | cut -c2-)}" $1
   fi
 }
 
