@@ -74,8 +74,11 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a"
 
+" Danke to
+" https://stackoverflow.com/questions/76863960/mouse-scrolling-clicking-in-vim-v9-stopped-working-with-no-changes-to-vimrc
 " Allow using the mouse to resize windows
-set ttymouse=xterm2
+"set ttymouse=xterm2
+
 
 " Keep window split thin
 " https://vi.stackexchange.com/questions/2938/can-the-split-separator-in-vim-be-less-than-a-full-column-wide
