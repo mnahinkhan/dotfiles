@@ -49,6 +49,11 @@ if [ -f /etc/os-release ] && [ "$(grep -c "Ubuntu" /etc/os-release)" -ne 0 ]; th
         rm miniconda-installer.sh
     fi
 
+    # git-delta
+    if ! command -v delta > /dev/null 2>&1 ; then
+        conda install git-delta -c conda-forge
+    fi
+
     # gh
     if ! command -v gh > /dev/null 2>&1; then
         type -p curl >/dev/null || sudo apt install curl -y
